@@ -1,0 +1,14 @@
+prefix=/media/cy/文件/IT/ffmpeg/ffmpeg-4.2.1/android/arm
+exec_prefix=${prefix}
+libdir=/media/cy/文件/IT/ffmpeg/ffmpeg-4.2.1/android/arm/lib
+includedir=/media/cy/文件/IT/ffmpeg/ffmpeg-4.2.1/android/arm/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}
